@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>形式</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <h1>形式</h1>
+    <form action="kaydet.php">
+      <label for="名前">お名前：</label>
+      <input
+        maxlength="20"
+        class="入力"
+        id="名前"
+        type="text"
+        placeholder="お名前を入力してください"
+      /><br /><br />
+
+      <label for="暗号">暗号：</label>
+      <input
+        name="sifre"
+        value=""
+        class="入力"
+        id="暗号"
+        type="password"
+        placeholder="暗号を入力してください"
+      /><br /><br />
+
+      <label for="歳">歳：</label>
+      <input
+        required=""
+        name="yas"
+        value=""
+        class="入力"
+        id="歳"
+        type="number"
+        placeholder="歳を入力してください"
+        min="0"
+        max="100"
+      /><br /><br />
+      <label for="メール">メール:</label>
+      <input
+        required=""
+        id="メール"
+        class="入力"
+        type="email"
+        　name="mail"
+        placeholder="メールを入力してください"
+      />
+      <br /><br />
+      <input type="submit" value="送信" />
+      <input type="button" value="削除" />
+    </form>
+  </body>
+</html>
