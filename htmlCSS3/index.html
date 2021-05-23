@@ -4,12 +4,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>形式</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <h1>形式</h1>
     <form action="kaydet.php">
-      <label for="名前">お名前：</label>
+      <label class="label" for="名前">お名前：</label>
       <input
         maxlength="20"
         class="入力"
@@ -18,7 +22,7 @@
         placeholder="お名前を入力してください"
       /><br /><br />
 
-      <label for="暗号">暗号：</label>
+      <label class="label" for="暗号">暗号：</label>
       <input
         name="sifre"
         value=""
@@ -28,7 +32,8 @@
         placeholder="暗号を入力してください"
       /><br /><br />
 
-      <label for="歳">歳：</label>
+      <label class="label" for="歳" style="margin-right: 1px">歳：</label>
+
       <input
         required=""
         name="yas"
@@ -40,18 +45,35 @@
         min="0"
         max="100"
       /><br /><br />
-      <label for="メール">メール:</label>
+      <label class="label" for="メール">Eメール:</label>
       <input
         required=""
         id="メール"
         class="入力"
         type="email"
         　name="mail"
-        placeholder="メールを入力してください"
+        placeholder="Eメールを入力してください"
       />
       <br /><br />
-      <input type="submit" value="送信" />
-      <input type="button" value="削除" />
+      <label class="label" for="adres">名宛：</label>
+      <textarea
+        placeholder="名宛を入力してください"
+        name="text-alani"
+        id="adres"
+        rows="10"
+      ></textarea
+      ><br /><br />
+
+      <button class="btn" type="submit">
+        <i class="far fa-paper-plane"></i> 送信
+      </button>
+
+      <!-- <button type="submit">保留</button> -->
+
+      <button class="btn" type="reset">
+        <i style="color: rgb(167, 28, 58)" class="far fa-trash-alt col"></i>
+        削除
+      </button>
     </form>
   </body>
 </html>
